@@ -1,0 +1,8 @@
+nombre totale de voiture: 5
+nombre voiture en location: 3
+2004-a-1
+2005-a-1
+2006-a-1
+nombre voiture disponible: 2
+1321-a-1
+2011-b-1

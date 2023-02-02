@@ -1,0 +1,5 @@
+python3 -m pip install kivy
+python3 -m pip install kivy-deps.angle
+python3 -m pip install kivy-deps.glew
+python3 -m pip install kivy-deps.gstreamer
+python3 -m pip install kivy-deps.sdl2

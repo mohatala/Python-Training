@@ -1,0 +1,35 @@
+# import the sqlite3 module
+
+import sqlite3
+
+# Create a connection object
+connection  = sqlite3.connect("MY_CLUB.db")
+
+# Get a cursor
+cursor      = connection.cursor()
+
+
+# Rename the SQLite Table
+
+renameTable = "ALTER TABLE sctivite RENAME TO activite"
+#cursor.execute(renameTable)
+
+ 
+
+# Query the SQLite master table
+tableQuery = "select * from sqlite_master"
+cursor.execute(tableQuery)
+tableList = cursor.fetchall()
+
+
+for table in tableList:
+    print("Name of the table: "+table[2])
+
+
+
+addColumn = "ALTER TABLE activite ADD COLUMN nature TEXT"
+#cursor.execute(addColumn)
+
+
+for row in cursor.execute('SELECT * FROM activite'):
+    print(row)
